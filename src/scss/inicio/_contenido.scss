@@ -1,0 +1,11 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+.contenido-principal {
+    background-color: v.$blanco;
+    padding: v.$separacion 2rem;
+    @include m.tablet {
+        margin-top: -10rem;
+        padding: 10rem;
+        position: relative;
+    }
+}

@@ -1,4 +1,4 @@
-@use 'variables'as v;
+@use "variables" as v;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -11,14 +11,16 @@ html {
 }
 
 body {
-    font-family: v.$fuente_principal;
+    background-color: v.$cafeClaro;
+    font-family: v.$fuenteSecundaria;
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
 p {
     color: v.$negro;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 .contenedor {
@@ -28,28 +30,18 @@ p {
 }
 
 a {
+    color: v.$negro;
     text-decoration: none;
 }
 
 img {
     display: block;
+    height: auto;
     max-width: 100%;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0 0 v.$separacion 0;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-}
-
-h3 {
-    font-size: 3.2rem;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
